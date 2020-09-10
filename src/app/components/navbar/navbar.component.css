@@ -1,0 +1,74 @@
+* {
+  box-sizing : border-box;
+  padding : 0;
+  margin : 0;
+  font-family :"itc-machine-std";
+
+}
+
+@font-face {
+  font-family :"itc-machine-std";
+  src :url("../../../assets/itc-machine-std/MachineStd-Bold.otf");
+}
+
+nav {
+ background-color : #222;
+ padding:5px 20px;
+}
+
+a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+  color:blue;
+}
+a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+ul {
+  list-style-type : none ;
+
+}
+
+li{
+
+  display:inline-block;
+}
+.logo{
+  color:#FFBF00;
+  font-size: 30px;
+}
+li :hover {
+  text-decoration:underline;
+  background-color: red;
+}
+
+
+.input{
+  border-top-left-radius: 27px;
+  border-bottom-left-radius: 27px;
+  text-align: center;
+}
+
+.search {
+  border-top-right-radius: 27px;
+  border-bottom-right-radius:27px;
+  background-color:#FFBF00;
+
+}
+
+.menu{
+  display:flex;
+  flex-wrap:wrap;
+  align-items: center;
+  justify-content:space-between;
+}
